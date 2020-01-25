@@ -4,6 +4,7 @@ Express middleware to expose select Node modules to browser.
 
 # Configuration Object
 
+```javascript
 {
 	appDir: string, // root directory below which node_modules can be found, usually __dirname
 	<browserRoot>: {
@@ -14,9 +15,11 @@ Express middleware to expose select Node modules to browser.
 	},
 	... more <browserRoot> objects, rarely used
 }
+```
 
 # Example
 
+```javascript
 import {modulastic} from "modulastic";
 
 const app = express(); // obviously need to import express first
@@ -30,5 +33,11 @@ app.use(modulastic(app,{
 	}, 
 	appDir:__dirname
 }));
+```
 
 # License: MIT
+
+# Change History
+
+
+2020-01-24 v0.0.2 Updated README format
