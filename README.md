@@ -6,14 +6,14 @@ Express middleware to expose select Node modules to browser.
 
 ```javascript
 {
-	appDir: string, // root directory below which node_modules can be found, usually __dirname
-	<browserRoot>: {
-		<nameToExpose>: {
-			packageName: string, // actual node package name, optional, defaults to <nameToExpose>, useful for @ prefixed packages
-			pathName: string // subdirectory under the module to expose, usually "dist"
-		}
-	},
-	... more <browserRoot> objects, rarely used
+  appDir: string, // root directory below which node_modules can be found, usually __dirname
+    <browserRoot>: {
+      <nameToExpose>: {
+        packageName: string, // actual node package name, optional, defaults to <nameToExpose>, useful for @ prefixed packages
+        pathName: string // subdirectory under the module to expose, usually "dist"
+      }
+    },
+    ... more <browserRoot> objects, rarely used
 }
 ```
 
@@ -25,13 +25,13 @@ import {modulastic} from "modulastic";
 const app = express(); // obviously need to import express first
 
 app.use(modulastic(app,{
-	modules: {
-		quill: {pathName:"dist"},
-		jsoneditor: {pathName:"dist"},
-		"dialog-polyfill": {pathName:"dist"},
-		"fontawesome": {packageName:"@fortawesome",pathName:"fontawesome-pro"}
-	}, 
-	appDir:__dirname
+  modules: {
+    quill: {pathName:"dist"},
+    jsoneditor: {pathName:"dist"},
+    "dialog-polyfill": {pathName:"dist"},
+    "fontawesome": {packageName:"@fortawesome",pathName:"fontawesome-pro"}
+  }, 
+  appDir:__dirname
 }));
 ```
 
@@ -39,5 +39,5 @@ app.use(modulastic(app,{
 
 # Change History
 
-
+2020-01-24 v0.0.3 Added git link
 2020-01-24 v0.0.2 Updated README format
