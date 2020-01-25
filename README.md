@@ -7,13 +7,13 @@ Express middleware to expose select Node modules to browser.
 ```javascript
 {
   appDir: string, // root directory below which node_modules can be found, usually __dirname
-    <browserRoot>: {
-      <nameToExpose>: {
-        packageName: string, // actual node package name, optional, defaults to <nameToExpose>, useful for @ prefixed packages
-        pathName: string // subdirectory under the module to expose, usually "dist"
-      }
-    },
-    ... more <browserRoot> objects, rarely used
+  <browserRoot>: {
+    <nameToExpose>: {
+      packageName: string, // actual node package name, optional, defaults to <nameToExpose>, useful for @ prefixed packages
+      pathName: string // subdirectory under the module to expose, usually "dist"
+    }
+  },
+  ... more <browserRoot> objects, rarely used
 }
 ```
 
