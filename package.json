@@ -1,0 +1,28 @@
+{
+  "name": "modulastic",
+  "description": "Express middleware to expose select Node modules to browser",
+  "version": "0.0.3",
+  "contributors": [
+    {
+      "name": "Simon Y. Blackwell",
+      "email": "s.y.blackwell@eventscope.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anywhichway/modulastic.git"
+  },
+  "scripts": {
+   
+  },
+  "devDependencies": {
+    
+  },
+  "dependencies": {
+   
+  },
+  "keywords": [
+    "express"
+  ],
+  "readmeFilename": "README.md"
+}
